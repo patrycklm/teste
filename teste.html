@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://ps4admin.retrogamer.tech/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Meta, title, CSS, favicons, etc. -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>RetroGamerFirm</title>
+
+    <!-- Bootstrap -->
+    <link href="scripts/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="http://ps4admin.retrogamer.tech/index.php" class="site_title"><i class="fa fa-cogs"></i> <span>PS4 ADMIN</span></a>
+            </div>
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile">
+              <div class="profile_pic"> </div>
+              <div class="profile_info">&nbsp;</div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br>
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>PS4 Exploit Admin</h3>
+                <ul class="nav side-menu">
+                  <li class=""><a><em class="fa fa-home"></em> HomeBrew Exploits </a>
+                    <ul class="nav child_menu" style="display: none;">
+                      <li><a href="http://ps4admin.retrogamer.tech/operations.php?by=orig">Original</a></li>
+                      <li><a href="http://ps4admin.retrogamer.tech/operations.php?by=hen">HEN</a></li>
+                      <li><a href="http://ps4admin.retrogamer.tech/operations.php?by=henvr">HEN-VR</a></li>
+                      <li><a href="http://ps4admin.retrogamer.tech/operations.php?by=cfw">CFW</a></li>
+                    </ul>
+                  </li>
+                  <li class=""><a><i class="fa fa-table"></i> Data Exploits <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu" style="display: none;">
+                      <li><a href="http://ps4admin.retrogamer.tech/operations.php?by=apptousb">AppToUSB</a></li>
+                      <li><a href="http://ps4admin.retrogamer.tech/operations.php?by=backup">Backup Main Data</a></li>
+                      <li><a href="http://ps4admin.retrogamer.tech/operations.php?by=dumper">Dumper (Game Backup)</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-bar-chart-o"></i> Comms Exploits <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu" style="">
+                      <li><a href="http://ps4admin.retrogamer.tech/operations.php?by=ftp">FTP Server</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-bar-chart-o"></i> Security Exploits <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu" style="">
+                      <li><a href="http://ps4admin.retrogamer.tech/operations.php?by=browser">Enable WWW Browser</a></li>
+                      <li><a href="http://ps4admin.retrogamer.tech/operations.php?by=block">Enable Block Updates</a></li>
+                      <li><a href="http://ps4admin.retrogamer.tech/operations.php?by=unblock">Disable Block Updates</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-table"></i> Game Mods <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu" style="">
+                        <li><a> GTA V <span class="fa fa-chevron-down"></span></a>
+                          <ul class="nav child_menu" style="">
+	                      <li><a href="http://ps4admin.retrogamer.tech/operations.php?by=gta1">Arabic Guy 1.0</a></li>
+        	              <li><a href="http://ps4admin.retrogamer.tech/operations.php?by=gta2">WildeModz v1.1</a></li>
+                	      <li><a href="http://ps4admin.retrogamer.tech/operations.php?by=gta3">Lamance v0.8</a></li>
+			  </ul>
+			</li>
+                        <li><a> COD 3 <span class="fa fa-chevron-down"></span></a>
+			</li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-bar-chart-o"></i> Settings <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu" style="">
+                      <li><a href="http://ps4admin.retrogamer.tech/operations.php?by=lang">Select Language</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /sidebar menu -->
+          </div>
+        </div>
+        <!-- top navigation -->
+        <!-- /top navigation -->
+	<script>
+        function setLanguage(lang)
+        {
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", "/setcookie.php?lang="+lang, false);
+                xhttp.send(null);
+                if(xhttp.status === 200){
+                        
+                        var result = xhttp.responseText;
+                        document.location = '/';
+                }
+        
+        }
+	</script>
+        <!-- page content -->
+        <div class="right_col" role="main" style="min-height: 589px;">
+          <div class="">
+            <div class="page-title">
+
+
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2><i class="fa fa-bars"></i> HEN-XVortex v1.4 <small>Management</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="http://ps4admin.retrogamer.tech/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div class="col-xs-3">
+                      <!-- required for floating -->
+                      <!-- Nav tabs -->
+		     
+                      <ul class="nav nav-tabs tabs-left">
+			                        <li class="active"><a href="http://ps4admin.retrogamer.tech/#home" data-toggle="tab">Exploit Info</a>
+                        </li>
+                        <li><a href="http://ps4admin.retrogamer.tech/#profile" data-toggle="tab">Run Exploit</a>
+                        </li>
+
+			
+                        <li><a href="http://ps4admin.retrogamer.tech/#credits" data-toggle="tab">Credits</a>
+                        </li>
+			                      </ul>
+                    </div>
+
+                    <div class="col-xs-9">
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+						
+                        <div class="tab-pane active" id="home">
+                          <p class="lead">Explanation</p>
+			  <p>Enable Homebrew ENabler ( HEN ). It allows you to run backups and homebrew.</p>
+                        </div>
+                        <div class="tab-pane " id="profile">
+				<p class="lead">Run Exploit</p>
+  				<p id="loader" class="loader" style="display:none"></p>
+			
+
+  <div id="allset" style="display:none;">
+   <p>HEN-XVortex v1.4 Exploit has been loaded. Follow instructions. If you need further information take a look to the Credits tab where is the link to the original project.</p>
+  </div>
+
+  <div id="fail" style="display:none;">
+    <p>EXPLOIT ERROR :(</p>
+  </div>
+
+  <div id="badfw" style="display:none;">
+    <p>JUST FIRMWARE 4.55 SUPPORTED</p>
+  </div>
+
+  <script>
+    function runExploit() {
+      setTimeout(exploit, 1500);
+    }
+
+
+    function setVisibleElements() {
+	document.getElementById('launchButton').style.display = 'none';
+	document.getElementById("loader").style.display = "block";
+
+   }
+
+    function allset() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("allset").style.display = "block";
+    }
+
+    function fail(info) {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("fail").style.display = "block";
+
+      alert(info);
+    } 
+
+	
+    function replacePayload(fromValue,DestValue,counter)
+    {
+	order=0;
+	for(var i=0; i < payload.length; i++) {
+
+		var payData = payload[i].toString();	
+		if(payData == fromValue)
+		{
+//			alert("Match found: "+payData+" -> "+DestValue+ ": "+counter);
+			if(order == counter)
+			{
+				payload[i]=DestValue;
+//				alert("Val1: "+payData+" Vale2: "+fromValue);
+//				alert("Replace Ocurred in position: "+payload[i]);
+				return 1;
+			}
+			else
+				order++;
+
+		}
+	}
+			
+    }
+
+    function setParamAppToUsb()
+    {
+	checkUSB="1006485064";checkUSB_ON="1006222920";
+	restParam="4257105920";restParamON="4189997056";
+	cusaTitleA="808464449";cusaTitleB="771764272";
+
+	if(document.getElementById("id_checkusb").checked)
+	{
+//		alert("id_checkusb");
+		replacePayload(checkUSB,checkUSB_ON,0);
+
+	}
+
+	counter=0;
+	if(document.getElementById("id_renameapp").checked)
+	{
+//		alert("id_renameapp");
+		replacePayload(restParam,restParamON,counter);
+	}
+	else
+	{
+		counter++;
+	}
+
+	if(document.getElementById("id_disablemeta").checked)
+	{
+//		alert("id_disablemeta");
+		replacePayload(restParam,restParamON,counter);
+	}
+	else
+	{
+		counter++;
+	}
+
+	if(document.getElementById("id_ignoreupdates").checked)
+	{
+//		alert("id_ignoreupdates");
+		replacePayload(restParam,restParamON,counter);
+	}
+	else
+	{
+		counter++;
+	}
+
+	if(document.getElementById("id_modemove").checked)
+	{
+//		alert("id_modemove");
+		replacePayload(restParam,restParamON,counter);
+	}
+		
+	cusatitle=document.getElementById("id_cusatitle").value;
+	document.getElementById("resMessage").style.display='block';
+	var xhttp = new XMLHttpRequest();
+	xhttp.open("GET", "/getParamValue.php?cusa="+cusatitle, false);
+	xhttp.send(null);
+	if(xhttp.status === 200){
+		var byteUpdateStr = xhttp.responseText;
+	}
+
+	var arrData = byteUpdateStr.split(";");
+	replacePayload(cusaTitleA,arrData[0],0);
+	replacePayload(cusaTitleB,arrData[1],0);
+	
+
+//	alert("Value Retrieved: "+byteUpdateStr);
+	
+    }
+
+    function setParam(Param)
+    {
+	var byteStr="87670272";
+	var byteStr2="968486793";
+	var byteStr3="1207959557";
+	port=document.getElementById(Param).value;
+	document.getElementById("resMessage").innerHTML = "Port "+port+" has been set";
+	document.getElementById("resMessage").style.display='block';
+	var xhttp = new XMLHttpRequest();
+	xhttp.open("GET", "/getParamValue.php?param="+port, false);
+	xhttp.send(null);
+	if(xhttp.status === 200){
+		var byteUpdateStr = xhttp.responseText;
+	}
+
+	order = 1;
+	var arrData = byteUpdateStr.split(";");
+	for(var i=0; i < payload.length; i++) {
+
+		var payBytes = payload[i].toString();	
+		if(payBytes==byteStr)
+		{
+			if(order == 1)
+			{
+				payload[i]=parseInt(arrData[0]);
+				order++;
+			}
+
+		}
+		else if(payBytes == byteStr2) {
+			
+			if(order == 2)
+			{
+				payload[i]=parseInt(arrData[1]);	
+				order++;
+			}
+		}
+
+		else if(payBytes == byteStr3) {
+			if(order == 3)
+			{
+				payload[i]=parseInt(arrData[2]);	
+				order++;
+			}
+		}
+			
+		
+	}
+//	alert("Value Retrieved: "+byteUpdateStr);
+	
+    }
+
+  </script>
+
+			
+						  <form id="resendfilesform" method="GET" action="http://ps4admin.retrogamer.tech/operations.php">
+				<input type="hidden" name="run" value="1">
+				<input type="hidden" name="by" value="hen">
+	    	    		<input type="hidden" name="rndid" value="3d5114be97ddb5ae5ea30f31b714df8e">
+				<button type="button" id="launchButton" onclick="setVisibleElements();runExploit()" class="btn btn-round btn-primary">Launch</button>
+			  </form>
+							</div>
+
+			                        <div class="tab-pane" id="credits">
+                          <p class="lead">Credits</p>
+			  <p>Development URL: <a href="https://github.com/xvortex/ps4-hen-vtx">https://github.com/xvortex/ps4-hen-vtx</a>
+                        </p></div>
+			                      </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="scripts/jquery.min.js.download"></script>
+    <!-- Bootstrap -->
+    <script src="scripts/bootstrap.min.js.download"></script>
+    <script src="scripts/custom.min.js.download"></script>
+    <!-- bootstrap-daterangepicker -->
+
+
+  <script src="scripts/rop.js.download"></script>
+  <script src="scripts/syscalls.js.download"></script>
+  <script src="scripts/payload_6.js.download"></script>
+  <script src="scripts/userland.js.download"></script>
+    		<script src="scripts/kernel.js.download"></script>
+	
+  
+
+</body></html>
